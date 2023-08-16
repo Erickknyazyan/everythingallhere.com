@@ -1048,9 +1048,7 @@
             #onetrust-pc-sdk p {
                 font-size: 0.75em
             }
-		.scroll-to-top{
-			display:none !important;
-        }
+	
 
         #onetrust-banner-sdk .banner-option-input:focus+label {
             outline: 1px solid #000;
@@ -5405,7 +5403,14 @@
         async="" crossorigin="anonymous" class="optanon-category-C0003 "></script>
     <style type="text/css"
         data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
-        .fb_hidden {
+        @media only screen and (max-width: 600px) {
+ 	.scroll-to-top{
+			display:none !important;
+        }
+}
+	    
+	    
+	    .fb_hidden {
             position: absolute;
             top: -10000px;
             z-index: 10001
